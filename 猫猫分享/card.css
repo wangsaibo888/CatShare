@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+/* 蓝色主题 */
+.card[data-theme="blue"] {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* 黑色主题 */
+.card[data-theme="black"] {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+/* 红色主题 */
+.card[data-theme="red"] {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.favicon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.theme-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-btn.active {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.theme-btn.blue {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.theme-btn.black {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.theme-btn.red {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+#downloadBtn {
+  background: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #6e8efb;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#downloadBtn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* 根据主题更改下载按钮颜色 */
+.card[data-theme="blue"] #downloadBtn {
+  color: #6e8efb;
+}
+
+.card[data-theme="black"] #downloadBtn {
+  color: #2c3e50;
+}
+
+.card[data-theme="red"] #downloadBtn {
+  color: #ff416c;
+}
+
+/* 添加卡片头部样式 */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.card-header .logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.card-header .title {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* 调整内容区域的样式 */
+.content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+} 

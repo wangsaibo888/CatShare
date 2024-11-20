@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "猫猫分享",
+  "version": "1.0",
+  "description": "将选中的文字生成精美分享卡片",
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "48": "images/icon48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": [
+      "images/icon48.png",
+      "images/icon128.png",
+      "card.html",
+      "card.css",
+      "card.js",
+      "html2canvas.min.js"
+    ],
+    "matches": ["<all_urls>"]
+  }]
+} 

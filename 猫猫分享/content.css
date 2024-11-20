@@ -1,0 +1,35 @@
+/* 分享按钮的基本样式 */
+#cat-share-button {
+  position: absolute;          /* 绝对定位，使按钮可以放置在页面任意位置 */
+  z-index: 99999;             /* 确保按钮显示在其他元素之上 */
+  background: white;          /* 按钮背景色为白色 */
+  border-radius: 20px;        /* 圆角边框，使按钮呈现圆润外观 */
+  height: 40px;              /* 按钮高度 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);  /* 添加阴影效果 */
+  cursor: pointer;           /* 鼠标悬停时显示手型光标 */
+  display: none;             /* 初始状态下隐藏按钮 */
+  transition: all 0.2s;      /* 所有属性变化时添加过渡效果 */
+  align-items: center;       /* 垂直居中对齐按钮内的元素 */
+  padding: 0 15px 0 10px;    /* 按钮内边距：上0 右15 下0 左10 */
+  gap: 8px;                 /* 按钮内元素之间的间距 */
+}
+
+/* 分享按钮悬停效果 */
+#cat-share-button:hover {
+  transform: scale(1.05);    /* 悬停时按钮略微放大 */
+  background: #f8f8f8;      /* 悬停时背景色变浅 */
+}
+
+/* 分享按钮内的图标样式 */
+#cat-share-button img {
+  width: 24px;              /* 图标宽度 */
+  height: 24px;             /* 图标高度 */
+}
+
+/* 分享按钮内的文字样式 */
+#cat-share-button .button-text {
+  color: #333;              /* 文字颜色为深灰色 */
+  font-size: 14px;          /* 文字大小 */
+  font-family: 'Microsoft YaHei', sans-serif;  /* 使用微软雅黑字体 */
+  white-space: nowrap;      /* 防止文字换行 */
+} 

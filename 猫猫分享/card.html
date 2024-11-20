@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>猫猫分享卡片</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <div class="card" data-theme="blue">
+    <div class="card-header">
+      <img class="logo" src="images/icon48.png" alt="猫猫分享">
+      <h1 class="title">猫猫分享</h1>
+    </div>
+    <div class="content">
+      <img class="favicon" id="pageFavicon" src="" alt="网页图标">
+      <div class="text" id="selectedText"></div>
+    </div>
+    <div class="controls">
+      <div class="theme-buttons">
+        <button class="theme-btn blue active" data-theme="blue"></button>
+        <button class="theme-btn black" data-theme="black"></button>
+        <button class="theme-btn red" data-theme="red"></button>
+      </div>
+      <button id="downloadBtn">下载卡片</button>
+    </div>
+  </div>
+  <script src="html2canvas.min.js"></script>
+  <script src="card.js"></script>
+</body>
+</html> 
